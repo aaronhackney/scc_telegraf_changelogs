@@ -1,0 +1,25 @@
+services:
+  telegraf:
+    image: telegraf:latest
+    container_name: telegraph-scc-changelogs-cisco-aaron-hackney-lab
+    restart: unless-stopped
+    command: --watch-config poll
+    volumes:
+      - "/etc/localtime:/etc/localtime:ro"
+      - "/var/run/docker.sock:/var/run/docker.sock:ro"
+      - "${DATA_DIR}/conf:/etc/telegraf:ro"
+    environment:
+      - PUID=${PUID}
+      - PGID=${PGID}
+      - SCC_BASE_URL=${SCC_BASE_URL}
+      - SCC_TOKEN=${SCC_TOKEN}
+      - TENANT_NAME=${TENANT_NAME}
+      - SPLUNK_API_KEY=${SPLUNK_API_KEY}
+      - SPLUNK_BASE_URL=${SPLUNK_BASE_URL}
+      - SPLUNK_HOSTNAME=${SPLUNK_HOSTNAME}
+    networks:
+      telegraf:
+
+networks:
+  telegraf:
+    external: true

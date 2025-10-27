@@ -1,0 +1,52 @@
+{
+    "count": 2,
+    "limit": 200,
+    "offset": 0,
+    "items": [
+        {
+            "uid": "f75f27a4-17e0-4314-8499-6ae9d06276cb",
+            "status": "COMPLETED",
+            "lastEventDate": "2025-07-12T22:27:40Z",
+            "entityUid": "b6e6d709-d133-4678-badc-6ec1ca7b8e6e",
+            "entityName": "Snuffy",
+            "events": [
+                {
+                    "description": "Changed ASA Config",
+                    "diff": "@@ -348,0 +348,1 @@\n+access-list inside extended permit tcp any any",
+                    "username": "aahackne@cisco.com",
+                    "date": "2025-07-12T22:27:20Z",
+                    "action": "UPDATE"
+                },
+                {
+                    "description": "Changed ASA Config",
+                    "diff": "@@ -349,0 +349,1 @@\n+access-list inside extended deny udp any any",
+                    "username": "aahackne@cisco.com",
+                    "date": "2025-07-12T22:27:28Z",
+                    "action": "UPDATE"
+                },
+                {
+                    "description": "Changed ASA Config",
+                    "diff": "@@ -5,1 +5,1 @@\n-: Written by cisco at 22:14:27.094 UTC Sat Jul 12 2025\n+: Written by cisco at 22:27:33.834 UTC Sat Jul 12 2025\n@@ -566,1 +566,1 @@\n-Cryptochecksum:ce485e47fd2f598f438849f27129679c\n+Cryptochecksum:4299dbf1abfc0a1627041bc578ab307a",
+                    "username": "aahackne@cisco.com",
+                    "date": "2025-07-12T22:27:38Z",
+                    "action": "UPDATE"
+                },
+                {
+                    "description": "Changes written successfully",
+                    "commands": "access-list inside line 3 extended permit tcp any any\naccess-list inside line 4 extended deny udp any any",
+                    "username": "aahackne@cisco.com",
+                    "date": "2025-07-12T22:27:40Z",
+                    "action": "UPDATE"
+                }
+            ]
+        },
+        {
+            "uid": "ef0e31a3-9b7a-4274-b9bb-74c590b61b32",
+            "status": "ACTIVE",
+            "lastEventDate": "2025-07-12T22:27:40Z",
+            "entityUid": "b6e6d709-d133-4678-badc-6ec1ca7b8e6e",
+            "entityName": "Snuffy",
+            "events": []
+        }
+    ]
+}
